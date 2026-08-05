@@ -19,6 +19,7 @@ pub struct Texture {
 	pub P: Texture2D,
 	pub BoardLight: Texture2D,
 	pub BoardDark: Texture2D,
+	pub BoardSel: Texture2D,
 }
 impl Texture {
 	pub fn new() -> Self {
@@ -37,6 +38,7 @@ impl Texture {
 			P: Self::load_piece("WP"),
 			BoardLight: Self::load_board("light"),
 			BoardDark: Self::load_board("dark"),
+			BoardSel: Self::load_board("sel")
 		}
 	}
 
